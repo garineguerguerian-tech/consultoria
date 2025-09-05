@@ -1,0 +1,50 @@
+/* Reset y base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Roboto', sans-serif; line-height: 1.6; background: #f4f7f9; color: #333; }
+a { text-decoration: none; color: inherit; }
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+  color: #fff;
+  padding: 60px 20px 40px;
+  text-align: center;
+}
+header h1 { font-family: 'Montserrat', sans-serif; font-size: 3em; margin-bottom: 10px; }
+header p { font-size: 1.3em; margin-bottom: 20px; }
+nav ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
+nav ul li a { color: #fff; font-weight: 600; padding: 10px 20px; border-radius: 5px; transition: background 0.3s; }
+nav ul li a:hover { background: rgba(255,255,255,0.2); }
+
+/* Secciones */
+section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+section h2 { font-family: 'Montserrat', sans-serif; font-size: 2em; color: #2e7d32; margin-bottom: 25px; text-align: center; }
+
+/* Servicios */
+.servicios { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+.card { background: #fff; padding: 30px; border-radius: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+.card h3 { color: #2e7d32; margin-bottom: 15px; }
+.card p { font-size: 1em; }
+
+/* Blog */
+.blog { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px; }
+.post { background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 5px 12px rgba(0,0,0,0.1); transition: transform 0.3s; }
+.post:hover { transform: translateY(-5px); }
+.post h4 { color: #2e7d32; margin-bottom: 10px; }
+.post p { font-size: 0.95em; }
+
+/* Contacto */
+form { display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: auto; }
+form input, form textarea { padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 1em; width: 100%; }
+form button { background: #2e7d32; color: #fff; padding: 15px; border: none; border-radius: 10px; font-size: 1.1em; cursor: pointer; transition: background 0.3s; }
+form button:hover { background: #1b5e20; }
+
+/* Footer */
+footer { background: #333; color: #fff; text-align: center; padding: 25px 15px; margin-top: 50px; font-size: 0.9em; }
+
+/* Responsive */
+@media(max-width:768px){
+  header h1 { font-size: 2.2em; }
+  section { padding: 40px 15px; }
+}
